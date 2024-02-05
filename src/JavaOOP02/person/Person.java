@@ -14,7 +14,47 @@ public class Person {
         this.age = age;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public boolean isGender() {
+        return gender;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    protected void setAddress(String address) {
+        this.address = address;
+    }
+
+    protected String getPhone() {
+        return phone;
+    }
+
+    protected void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public Person(String name, boolean gender, int age) {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+    }
 
     public void setGender(boolean gender) {
         if(gender){
@@ -24,8 +64,14 @@ public class Person {
         }
 
     }
+    public void showInfoCompany(){
+        System.out.println("Tên: "+name);
+        System.out.println("Tuổi: "+age);
+        setGender(gender);
 
-    public void showInfo(){
+
+    }
+    protected void showInfo(){
         System.out.println("Tên: "+name);
         System.out.println("Tuổi: "+age);
         setGender(gender);
